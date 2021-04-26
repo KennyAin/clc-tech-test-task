@@ -7,6 +7,8 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'defaultRoute' => 'message/index',
+    'name' => 'clc-tech-test-task',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -14,7 +16,7 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'guSvM8vYTWiq1JRa1m4kg8XGpEqPJsoM',
+            'cookieValidationKey' => '6UE8Zwd-CpNl7jrfcfRQ_DPa4sjmQixg',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
