@@ -1,8 +1,9 @@
 <?php
 /* @var $this yii\web\View */
 use yii\helpers\Url;
+use yii\helpers\Html;
 ?>
-<div class="">
+<div class="row">
 
         <?foreach($messages as $message):?>
             <div class="col-lg-4">
@@ -11,4 +12,7 @@ use yii\helpers\Url;
             <p>message = <?=$message->text?></p>
         </div>
         <?endforeach;?>
+</div>
+<div>
+<?= Html::a('<---- Обратно', ['/message/index'], ['class'=>'btn btn-success']) ?>
 </div>
